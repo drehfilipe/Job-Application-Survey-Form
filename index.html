@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html>
+    <link href="CSS/survey.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <head>
-        <h1 id="title">Survey Title</h1>
-        <p id="description">Survey description</p>
+        <h1 id="title">Zara Delievery Survey Form</h1>
+        <p id="description">Thank you for your time to give us your opinion</p>
     </head>
     <body>
-        <form id="survey-form">
-            <label id="name-label" for="name">Name:</label>
-            <input id="name" type="text" placeholder="Enter your name" required>
-            <label id="email-label" for="email">Email:</label>
-            <input id="email" type="email" placeholder="Enter your Email" required>
-            <label id="number-label" for="number">Age (Optional):</label>
-            <input id="number" type="number" placeholder="Enter your age" min="12" max="120">
-            <label id="dropdown-label" for="dropdown">Choose one:</label>
-            <select id="dropdown" name="choices">
-                <option value="choice1">Choice 1</option>
-                <option value="choice2">Choice 2</option>
-                <option value="choice3">Choice 3</option>
-            </select>
-            <label for="radio-label">Would you recomended to a friend?<br>
-                <input id="radio-label" type="radio" name="items">Item-One
-                <input id="radio-label" type="radio" name="items">Item-Two
-                <input id="radio-label" type="radio" name="items">Item-Three
-            </label>
-
-        </form>
+        <div id="survey-box">
+            <form id="survey-form">
+                <div class="form-content">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-content">
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-content">
+                    <label id="number-label" for="number">Age (Optional):</label>
+                    <input id="number" type="number" placeholder="Enter your age" min="12" max="120">
+                </div>
+                <div class="form-content">
+                    <label id="dropdown-label" for="dropdown">Choose one:</label>
+                    <select id="dropdown" name="choices">
+                        <option value="choice1">Choice 1</option>
+                        <option value="choice2">Choice 2</option>
+                        <option value="choice3">Choice 3</option>
+                    </select>
+                </div>
+                <div class="form-content">
+                    <label for="radio-label">Would you recomended to a friend?</label>
+                        <input id="radio-label" type="radio" name="items" value="Item-One">Item-One
+                        <input id="radio-label" type="radio" name="items" value="Item-Two">Item-Two
+                        <input id="radio-label" type="radio" name="items" value="Item-Three">Item-Three
+                </div>
+                <div class="form-content">
+                    <label for="checkbox-label"> What do you prefer?</label>
+                        <input id="checkbox-label" type="checkbox" name="checkbox-label" value="1"> 1
+                        <input id="checkbox-label" type="checkbox" name="checkbox-label" value="2"> 2
+                </div>
+                <div class="form-content">
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-content">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>  
     </body>
+    <!-- The script below tests if the code follow all rules for the freeCOdeCamp project
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </html>
