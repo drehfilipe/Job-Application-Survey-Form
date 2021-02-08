@@ -4,8 +4,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <head>
-        <h1 id="title">Zara Delievery Survey Form</h1>
-        <p id="description">Thank you for your time to give us your opinion</p>
+        <h1 id="title">Let's Talk</h1>
+        <p id="description">Do you think you have what it takes?</p>
     </head>
     <body>
         <div id="survey-box">
@@ -15,34 +15,41 @@
                     <input id="name" type="text" placeholder="Enter your name" required>
                 </div>
                 <div class="form-content">
-                    <label id="email-label" for="email">Email:</label>
+                    <label id="email-label" for="email">Email</label>
                     <input id="email" type="email" placeholder="Enter your Email" required>
                 </div>
                 <div class="form-content">
-                    <label id="number-label" for="number">Age (Optional):</label>
+                    <label id="number-label" for="number">Age (Optional)</label>
                     <input id="number" type="number" placeholder="Enter your age" min="12" max="120">
                 </div>
                 <div class="form-content">
-                    <label id="dropdown-label" for="dropdown">Choose one:</label>
+                    <label id="dropdown-label" for="dropdown">Which is your primary focus?</label>
                     <select id="dropdown" name="choices">
-                        <option value="choice1">Choice 1</option>
-                        <option value="choice2">Choice 2</option>
-                        <option value="choice3">Choice 3</option>
+                        <option value="" disabled selected hidden>Choose One</option>
+                        <option value="choice1">UX Designer</option>
+                        <option value="choice2">Front-end Dev</option>
+                        <option value="choice3">Design Research</option>
                     </select>
                 </div>
                 <div class="form-content">
-                    <label for="radio-label">Would you recomended to a friend?</label>
-                        <input id="radio-label" type="radio" name="items" value="Item-One">Item-One
-                        <input id="radio-label" type="radio" name="items" value="Item-Two">Item-Two
-                        <input id="radio-label" type="radio" name="items" value="Item-Three">Item-Three
+                    <label for="radio-label">Position?</label>
+                    <label><input id="radio-label" type="radio" name="items" value="Item-One" checked>Full time</label>
+                    <label><input id="radio-label" type="radio" name="items" value="Item-Two">Part time</label>
+                    <label><input id="radio-label" type="radio" name="items" value="Item-Two">Intern</label>
                 </div>
                 <div class="form-content">
-                    <label for="checkbox-label"> What do you prefer?</label>
-                        <input id="checkbox-label" type="checkbox" name="checkbox-label" value="1"> 1
-                        <input id="checkbox-label" type="checkbox" name="checkbox-label" value="2"> 2
+                    <label for="checkbox-label"> Where would you like to work?</label>
+                    <label><input id="checkbox-label" type="checkbox" name="checkbox-label" value="1"> Austin, Texas</label>
+                    <label><input id="checkbox-label" type="checkbox" name="checkbox-label" value="2"> New York, New York</label>
+                    <label><input id="checkbox-label" type="checkbox" name="checkbox-label" value="2"> Toronto, Canada</label>
+                    <label><input id="checkbox-label" type="checkbox" name="checkbox-label" value="2"> Prague, Czech Republic</label>
+                    <label><input id="checkbox-label" type="checkbox" name="checkbox-label" value="2"> Shanghai, China</label>
+                    <label><input id="checkbox-label" type="checkbox" name="checkbox-label" value="2"> Lisbon, Portugal</label>
+                    <label><input id="checkbox-label" type="checkbox" name="checkbox-label" value="2"> Somewhere else</label>
                 </div>
                 <div class="form-content">
-                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                    <label id="comments-label" for="comments">Portfolio link*</label>
+                    <textarea id="comments" name="comments" placeholder="Anything else (another link, avaliability, etc.)?" rows="4" cols="50"></textarea>
                 </div>
                 <div class="form-content">
                     <button id="submit" type="submit">Submit</button>

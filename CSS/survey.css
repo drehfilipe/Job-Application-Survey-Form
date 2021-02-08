@@ -4,6 +4,7 @@
 
 html{
     height: 100%;
+    background-color: #1E1E22;
 }
 
 body{
@@ -15,10 +16,12 @@ body{
     text-align: center;
     height: auto;
     margin: 30px;
+    color: #1ED1C3;
 }
 
 #description{
-    font-size: 32px;
+    font-size: 26px;
+    color: white;
     text-align: center;
     height: auto;
     margin: 30px;
@@ -27,23 +30,38 @@ body{
 }
 
 #survey-box{
-    background-color: cornflowerblue;
-    position: relative;
-    width: 70%;
-    height: auto;
+    background-color: transparent;
+    margin: auto;
+    width: 600px;   
     border-radius: 15px;
 }
 
 #survey-form{
-    padding: 30px;
+    padding: 50px;
+    margin: 30px;
 }
 
 .form-content{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    margin: 18px auto 18px auto;
+    margin: 30px auto 30px auto;
 }
 
 label{
     display: flex;
+    margin: auto auto 5px auto;
+}
+
+#radio-label, #checkbox-label{
+    display: flex;
+    margin: 5px 10px 10px 1px;
+}
+
+input[type=text], [type=email], [type=number], textarea, select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #1ED1C3;
+    border-style: solid;
+    border-width: 2px;
 }
