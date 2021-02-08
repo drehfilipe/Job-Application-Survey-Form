@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -44,12 +44,17 @@ body{
 .form-content{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    color: white;
     margin: 30px auto 30px auto;
 }
 
 label{
     display: flex;
-    margin: auto auto 5px auto;
+    margin: auto auto 10px auto;
+}
+
+::placeholder{
+    opacity: 70%;
 }
 
 #radio-label, #checkbox-label{
@@ -64,4 +69,27 @@ input[type=text], [type=email], [type=number], textarea, select{
     border-color: #1ED1C3;
     border-style: solid;
     border-width: 2px;
+}
+
+#submit{
+    width: 100%;
+    padding: 10px;
+    background-color: #1ED1C3;
+    border: none;
+    border-radius: 5px;
+}
+
+#comments{
+    min-height: 100px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    input[type=text], [type=email], [type=number], textarea, select{
+        max-width: 70%;
+    }
+
+    #comments, #submit{
+        max-width: 70%;
+    }
 }
